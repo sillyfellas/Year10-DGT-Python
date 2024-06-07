@@ -12,7 +12,7 @@ print("please enter all the following measurments in meters.")
 # "please enter a number higher than zero".
 
 error = "Please enter a number that is more than zero\n"
-if True:
+while True:
 
     try: # This whole function allows the user to input their measurements.
         # If they insert a zero, it should ask them to insert a number higher than zero. 
@@ -46,7 +46,12 @@ if True:
     print(f"Perimeter is {perimeter} ")
     print(f"Total cost is {total} ")
 
-    float (input("Would you calculate again?"))
+    input = str(input("Would you calculate again?"))
+    if input == "yes":
+        continue
+    elif input == "no":
+        break
+
 
 
     
